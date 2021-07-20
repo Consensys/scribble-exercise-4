@@ -9,7 +9,7 @@ contract Initializable {
     bool private initialized;
 
     /// #if_succeeds !old(initialized);
-    /// #if_succeeds initialzed;
+    /// #if_succeeds initialized;
     function initialize() public {
         require(!initialized);
         initialized = true;
